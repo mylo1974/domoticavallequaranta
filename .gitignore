@@ -1,0 +1,41 @@
+# Home Assistant
+homeassistant/secrets.yaml
+homeassistant/.storage/
+homeassistant/.cloud/
+homeassistant/*.db
+homeassistant/*.db-*
+homeassistant/*.log*
+homeassistant/.uuid
+homeassistant/known_devices.yaml
+homeassistant/ip_bans.yaml
+homeassistant/tts/
+homeassistant/deps/
+homeassistant/backups/
+
+# ESPHome
+esphome/secrets.yaml
+esphome/.esphome/
+esphome/**/.pioenvs/
+esphome/**/.piolibdeps/
+
+# Frigate
+frigate/*.db
+frigate/media/
+frigate/clips/
+frigate/recordings/
+frigate/model_cache/
+
+# Dati biometrici e identificativi - mai versionare
+**/faces/
+**/fingerprints/
+**/embeddings/
+secrets/
+*.chipid
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+
+.DS_Store
