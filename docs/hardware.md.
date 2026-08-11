@@ -1,0 +1,41 @@
+# Note hardware
+
+## Lettore microchip animali
+
+I transponder impiantati negli animali d'affezione seguono lo standard
+ISO 11784/11785, modalita' FDX-B, frequenza 134,2 kHz. Il codice restituito
+ha 15 cifre: le prime tre sono il codice paese (380 per l'Italia), le
+restanti dodici l'identificativo univoco registrato in anagrafe.
+
+Moduli NON compatibili, da evitare:
+- RC522 (13,56 MHz, MIFARE)
+- RDM6300 / EM4100 (125 kHz)
+
+Serve un modulo dedicato a 134,2 kHz FDX-B, preferibilmente con uscita
+seriale UART. Portata di lettura tipica: pochi centimetri, quindi va
+installato ai varchi (gattaiola, cancelletto, mangiatoia), non a copertura
+di area.
+
+Collegamento previsto: ESP32 con ESPHome, lettore su UART, codice esposto a
+Home Assistant come evento o text sensor.
+
+## Videosorveglianza
+
+Frigate come NVR locale. Il riconoscimento facciale integrato (dalla 0.16)
+richiede che venga prima rilevata una persona; il nome riconosciuto viene
+aggiunto come sub_label. Non affiancare altri servizi di riconoscimento
+facciale: interferiscono con quello nativo.
+
+Cani e gatti sono rilevati come classe di oggetto dal modello COCO standard,
+ma senza distinzione tra individui: l'identificazione del singolo animale
+resta compito del lettore di microchip.
+
+Impostare fin da subito le zone di mascheratura per escludere la strada
+pubblica e le proprieta' confinanti.
+
+## Da definire
+
+- modello del lettore microchip
+- numero e posizione delle telecamere
+- hardware su cui gira Home Assistant e acceleratore per l'inferenza
+- sensore biometrico per il varco d'accesso
