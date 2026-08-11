@@ -1,0 +1,28 @@
+# Domotica Valle Quaranta
+
+Home Assistant, ESPHome, Frigate e controllo accessi per abitazione privata.
+
+## Struttura
+- `homeassistant/` — configurazione HA (automations/, packages/)
+- `esphome/chip-reader/` — lettore microchip animali
+- `esphome/accessi/` — varchi e biometria
+- `frigate/` — NVR, rilevamento oggetti e volti
+- `docs/` — schemi di collegamento e note hardware
+
+## Vincoli hardware
+Il lettore microchip deve rispettare ISO 11784/11785 FDX-B a 134,2 kHz.
+NON proporre RC522, RDM6300 o moduli 125 kHz / 13,56 MHz: sono incompatibili
+con i microchip degli animali d'affezione.
+Frigate: usare 0.16+ per il riconoscimento facciale nativo con `sub_label`.
+
+## Segreti — repository PUBBLICO
+Mai committare valori reali. Le credenziali stanno in `secrets.yaml`
+(escluso da `.gitignore`); nei file `secrets.yaml.example` solo chiavi
+con valori PLACEHOLDER.
+Mai committare: template biometrici, embedding facciali, codici microchip
+reali, indirizzi IP interni, posizioni precise delle telecamere.
+
+## Convenzioni
+YAML indentato a 2 spazi. Commenti in italiano.
+Prima di modificare automazioni esistenti, leggere l'intero file: HA fallisce
+il caricamento dell'intero package se un'automazione è malformata.
