@@ -68,4 +68,4 @@ Da riga di comando (serve l'SDK Android):
 
 I rilievi contengono la posizione esatta della casa. Restano nel database
 dell'app e nei file esportati in `Download/MappaSegnale/`. **Non committarli**
-in questo repository (è pubblico): `.gitignore` esclude già `*.csv` e `*.kml`.
+in questo repository (anche se privato, la cronologia Git è per sempre): `.gitignore` esclude già `*.csv` e `*.kml`.

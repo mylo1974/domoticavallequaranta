@@ -18,7 +18,9 @@ NON proporre RC522, RDM6300 o moduli 125 kHz / 13,56 MHz: sono incompatibili
 con i microchip degli animali d'affezione.
 Frigate: usare 0.16+ per il riconoscimento facciale nativo con `sub_label`.
 
-## Segreti — repository PUBBLICO
+## Segreti — repository privato, ma regole invariate
+Il repository è stato pubblico fino a settembre 2026 e potrebbe tornarlo:
+trattalo come se fosse leggibile da chiunque (anche la cronologia Git).
 Mai committare valori reali. Le credenziali stanno in `secrets.yaml`
 (escluso da `.gitignore`); nei file `secrets.yaml.example` solo chiavi
 con valori PLACEHOLDER.
