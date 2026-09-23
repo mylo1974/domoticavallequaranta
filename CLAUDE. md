@@ -8,6 +8,9 @@ Home Assistant, ESPHome, Frigate e controllo accessi per abitazione privata.
 - `esphome/accessi/` — varchi e biometria
 - `frigate/` — NVR, rilevamento oggetti e volti
 - `docs/` — schemi di collegamento e note hardware
+- `segnale-cellulare/` — app Android (Kotlin, senza AndroidX) per rilievo celle
+  e puntamento antenne; APK compilato da `.github/workflows/segnale-apk.yml`.
+  I rilievi esportati (CSV/KML) contengono la posizione della casa: mai committarli.
 
 ## Vincoli hardware
 Il lettore microchip deve rispettare ISO 11784/11785 FDX-B a 134,2 kHz.

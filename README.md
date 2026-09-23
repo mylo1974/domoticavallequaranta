@@ -11,6 +11,8 @@ degli animali d'affezione, videosorveglianza e controllo accessi.
       accessi/         controllo varchi e biometria
     frigate/           configurazione NVR e rilevamento oggetti
     docs/              schemi di collegamento e note hardware
+    segnale-cellulare/ app Android per mappare il segnale cellulare e
+                       orientare l'antenna dell'amplificatore
 
 ## Segreti
 

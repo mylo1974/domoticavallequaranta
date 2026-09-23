@@ -1,0 +1,14 @@
+# build
+.gradle/
+build/
+app/build/
+local.properties
+*.apk
+*.aab
+.idea/
+*.iml
+
+# Rilievi esportati: contengono coordinate GPS della casa, MAI nel repository pubblico
+*.csv
+*.kml
+rilievi/

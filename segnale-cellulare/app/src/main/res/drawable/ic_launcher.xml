@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icona: tacche del segnale su fondo blu -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path android:fillColor="#1565C0" android:pathData="M8,2h32a6,6 0,0 1,6 6v32a6,6 0,0 1,-6 6h-32a6,6 0,0 1,-6 -6v-32a6,6 0,0 1,6 -6z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M10,34h5v6h-5z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M18,27h5v13h-5z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M26,19h5v21h-5z" />
+    <path android:fillColor="#90CAF9" android:pathData="M34,10h5v30h-5z" />
+</vector>
